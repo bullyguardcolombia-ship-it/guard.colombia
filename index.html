@@ -69,16 +69,6 @@
 </head>
 <body>
 
-  <h1>Galería con Efecto Hover</h1>
-
-  <!-- Reemplaza "tu-imagen.jpg" con la ruta de tu imagen -->
-  <img src="tu-imagen.jpg" alt="hero_videocall.png">
-
-  <img src="tu-imagen2.jpg" alt="attention_types.png">
-
-</body>
-</html>
-
  <!-- Tu Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top shadow-sm">
     <div class="container">
@@ -89,18 +79,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#why-us">Por qué nosotros</a></li>
+         <li class="nav-item"><a class="nav-link" href="#porque-nosotros">Por qué nosotros</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
           <li class="nav-item"><a class="nav-link" href="#plans">Planes</a></li>
           <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#psicologos">Psicólogos</a></li>
+           <li class="nav-item"><a class="nav-link" href="#psicologos">Psicólogos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-<section id="inicio">
+<section id="inicio" class="text-center">
+  <a href="#inicio">
+    <img src="logo.jpeg" alt="Logo BullyGuard" style="width: 10%;" class="img-fluid mb-3">
+  </a>
+    
   <h1>Bienvenido a BullyGuard</h1>
   <p>
     En BullyGuard nos dedicamos a acompañarte psicológicamente de manera segura y accesible. 
@@ -867,11 +861,11 @@ function startTest(event) {
             <!-- Psicólogo 1 -->
             <div class="col-md-6 col-lg-4">
                 <div class="profile-card text-center">
-                    <img src="angelica.jpg" alt="Angelica Mellizo Vasquez" class="img-fluid rounded-4 mb-3">
-                    <h3>Angelica Mellizo Vasquez</h3>
+                   <img src="angelica-mellizo.jpeg" alt="Angélica Mellizo Vásquez" class="img-fluid rounded-4 mb-3">
+                    <h3>Angélica Mellizo Vásquez</h3>
                     <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info1')">Ver información</button>
                     <div class="info-box" id="info1">
-                        <h4>Angelica Mellizo Vasquez</h4>
+                        <h4>Angélica Mellizo Vásquez</h4>
                         <p>Especialización: Psicología infantil y familiar</p>
                         <p>Experiencia: 5 años ayudando a niños y adolescentes</p>
                         <button class="btn btn-secondary btn-sm" onclick="closeInfo('info1')">Cerrar</button>
@@ -882,11 +876,11 @@ function startTest(event) {
             <!-- Psicólogo 2 -->
             <div class="col-md-6 col-lg-4">
                 <div class="profile-card text-center">
-                    <img src="manuel.jpg" alt="Manuel Guerrero" class="img-fluid rounded-4 mb-3">
-                    <h3>Manuel Guerrero</h3>
+                  <img src="images/manuel-guerrero.jpeg" alt="Mag. Manuel Guerrero Gómez" class="img-fluid rounded-4 mb-3">
+                    <h3>Manuel Guerrero Gómez</h3>
                     <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info2')">Ver información</button>
                     <div class="info-box" id="info2">
-                        <h4>Manuel Guerrero</h4>
+                        <h4>Manuel Guerrero Gómez</h4>
                         <p>Especialización: Psicología clínica y terapia de adultos</p>
                         <p>Experiencia: 8 años en manejo de ansiedad y depresión</p>
                         <button class="btn btn-secondary btn-sm" onclick="closeInfo('info2')">Cerrar</button>
@@ -897,11 +891,11 @@ function startTest(event) {
             <!-- Psicólogo 3 -->
             <div class="col-md-6 col-lg-4">
                 <div class="profile-card text-center">
-                    <img src="marisol.jpg" alt="Marisol Benites" class="img-fluid rounded-4 mb-3">
-                    <h3>Marisol Benites</h3>
+                   <img src="images/marisol-benitez.jpeg" alt="Dra. Marisol Benítez Urrea" class="img-fluid rounded-4 mb-3">
+                    <h3>Marisol Benítez Urrea</h3>
                     <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info3')">Ver información</button>
                     <div class="info-box" id="info3">
-                        <h4>Marisol Benites</h4>
+                        <h4>Marisol Benítez Urrea</h4>
                         <p>Especialización: Psicología educativa y coaching personal</p>
                         <p>Experiencia: 6 años apoyando a jóvenes y adultos</p>
                         <button class="btn btn-secondary btn-sm" onclick="closeInfo('info3')">Cerrar</button>
