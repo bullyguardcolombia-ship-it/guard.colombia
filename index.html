@@ -16,8 +16,9 @@
     <meta name="robots" content="index, follow">
     <meta name="language" content="Spanish">
     
-    <!-- Bootstrap CSS</head> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Bootstrap CSS</head> -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     
     <!-- Google Fonts - Optimized for SEO and Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,63 +27,105 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-</head>
+<style>
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  filter: brightness(1) saturate(1);
+}
+
+img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05) saturate(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}   
+</head>    
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #FAF8F5; border-bottom: 1px solid #E8DDD0;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#home">
-                <img src="logo.jpeg" alt="logo tipo bullyguard" style="max-width:10%;height:auto;">
 
+ <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">BullyGuard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-us">Por qué nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#plans">Planes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#psicologos">Psicólogos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                <span style="color: #8B5E3C; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.5rem;">BullyGuard</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hero" style="color: #4E342E;">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#why-us" style="color: #4E342E;">Por qué nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services" style="color: #4E342E;">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#plans" style="color: #4E342E;">Planes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials" style="color: #4E342E;">Testimonios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#psychologists" style="color: #4E342E;">Psicólogos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" style="color: #4E342E;">Contacto</a></li>
-                </ul>
+  <!-- Sección Inicio -->
+  <section id="inicio">
+    <h1>Bienvenido a BullyGuard</h1>
+    <p>
+      En BullyGuard nos dedicamos a acompañarte psicológicamente de manera segura y accesible. 
+      Ofrecemos sesiones confidenciales con psicólogos certificados, planes flexibles adaptados a tus necesidades, 
+      y un espacio seguro para tu bienestar emocional. Tu salud mental es nuestra prioridad.
+    </p>
+    <button class="boton-flotante">Tu bienestar es importante para nosotros</button>
+  </section>
+    
+<!-- Hero Section -->
+<section id="hero" class="hero-section" style="background-color: #FAF8F5; padding: 80px 0;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h1 class="hero-title mb-4">
+                    <span style="color: #8B5E3C;">BULLYGUARD</span><br>
+                    <span style="color: #4E342E; font-size: 2.5rem;">Terapia psicológica online segura, humana y accesible.</span>
+                </h1>
+                <p class="hero-subtitle mb-4" style="color: #4E342E; font-size: 1.1rem; line-height: 1.8;">
+                    Recupera tu bienestar emocional con sesiones guiadas por profesionales certificados, desde la comodidad de tu casa y con total confidencialidad.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20hablar%20con%20un%20psicólogo" class="btn btn-custom-primary hero-btn" target="_blank">
+                        💬 Habla con un psicólogo ahora por WhatsApp
+                    </a>
+                    <a href="#plans" class="btn btn-custom-secondary hero-btn">
+                        📆 Agendamiento inmediato
+                    </a>
+                </div>
+                <p class="mt-3" style="color: #8B5E3C; font-size: 0.95rem;">✓ Sin esperas ni registros complicados</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="hero_videocall.png" alt="Videollamada con psicólogo" class="img-fluid rounded-4" style="box-shadow: 0 10px 40px rgba(139, 94, 60, 0.15);">
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section" style="background-color: #FAF8F5; padding: 80px 0;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h1 class="hero-title mb-4">
-                        <span style="color: #8B5E3C;">BULLYGUARD</span><br>
-                        <span style="color: #4E342E; font-size: 2.5rem;">Terapia psicológica online segura, humana y accesible.</span>
-                    </h1>
-                    <p class="hero-subtitle mb-4" style="color: #4E342E; font-size: 1.1rem; line-height: 1.8;">
-                        Recupera tu bienestar emocional con sesiones guiadas por profesionales certificados, desde la comodidad de tu casa y con total confidencialidad.
-                    </p>
-                    <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20hablar%20con%20un%20psicólogo" class="btn btn-custom-primary" target="_blank">
-                            💬 Habla con un psicólogo ahora por WhatsApp
-                        </a>
-                        <a href="#plans" class="btn btn-custom-secondary">
-                            📆 Agendamiento inmediato
-                        </a>
-                    </div>
-                    <p class="mt-3" style="color: #8B5E3C; font-size: 0.95rem;">✓ Sin esperas ni registros complicados</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="hero_videocall.png" alt="Videollamada con psicólogo" class="img-fluid rounded-4" style="box-shadow: 0 10px 40px rgba(139, 94, 60, 0.15);">
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- CSS para los botones -->
+<style>
+.hero-btn {
+    transition: all 0.3s ease;
+}
 
+.hero-btn:hover {
+    background-color: #C9A77B !important; /* cambio de color suave al pasar mouse */
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important; /* cambio de color al tocar/click */
+    color: #fff !important;
+    transform: scale(0.98);
+}
+
+
+ 
     <!-- Why Us Section -->
     <section id="why-us" class="why-us-section py-5" style="background-color: #FFFFFF;">
         <div class="container">
@@ -128,13 +171,30 @@
                 </div>
             </div>
 
-            <div class="text-center">
-                <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20agendar%20mi%20primera%20sesión" class="btn btn-custom-primary" target="_blank">
-                    💚 Agenda tu primera sesión sin compromiso
-                </a>
-            </div>
-        </div>
-    </section>
+           <div class="text-center">
+    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20agendar%20mi%20primera%20sesión" 
+       class="btn btn-custom-primary hero-btn" target="_blank">
+        💚 Agenda tu primera sesión sin compromiso
+    </a>
+</div>
+
+<!-- CSS para animación de botón -->
+<style>
+.hero-btn {
+    transition: all 0.3s ease; /* suaviza la animación */
+}
+
+.hero-btn:hover {
+    background-color: #C9A77B !important; /* cambio de color al pasar el mouse */
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important; /* cambio de color al hacer clic */
+    color: #fff !important;
+    transform: scale(0.98); /* pequeño efecto de presión */
+}
+
 
     <!-- Services Section -->
     <section id="services" class="services-section py-5" style="background-color: #FAF8F5;">
@@ -200,13 +260,31 @@
                 Sea cual sea tu historia, aquí encuentras un espacio empático donde puedes hablar sin miedo.
             </p>
 
-            <div class="text-center">
-                <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20necesito%20ayuda%20para%20elegir%20el%20plan%20ideal" class="btn btn-custom-primary" target="_blank">
-                    📲 Escribenos y te ayudamos a elegir el plan ideal
-                </a>
-            </div>
-        </div>
-    </section>
+         <div class="text-center">
+    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20necesito%20ayuda%20para%20elegir%20el%20plan%20ideal" 
+       class="btn btn-custom-primary hero-btn" target="_blank">
+        📲 Escribenos y te ayudamos a elegir el plan ideal
+    </a>
+</div>
+
+<!-- CSS para animación de botón (si ya agregaste el anterior, no hace falta duplicar) -->
+<style>
+.hero-btn {
+    transition: all 0.3s ease; /* suaviza la animación */
+}
+
+.hero-btn:hover {
+    background-color: #C9A77B !important; /* cambio de color al pasar el mouse */
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important; /* cambio de color al hacer clic */
+    color: #fff !important;
+    transform: scale(0.98); /* pequeño efecto de presión */
+}
+
+
 
     <!-- Trust Section -->
     <section id="trust" class="trust-section py-5" style="background-color: #FFFFFF;">
@@ -286,52 +364,70 @@
             </div>
         </div>
     </section>
+<!-- Plans Section -->
+<section id="plans" class="plans-section py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
+            Planes pensados para tu ritmo y presupuesto.
+        </h2>
 
-    <!-- Plans Section -->
-    <section id="plans" class="plans-section py-5" style="background-color: #FFFFFF;">
-        <div class="container">
-            <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
-                Planes pensados para tu ritmo y presupuesto.
-            </h2>
-
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-4">
-                    <div class="plan-card" style="background-color: #FAF8F5; border: 2px solid #C9A77B; padding: 40px 30px; border-radius: 12px; text-align: center;">
-                        <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">💬 Sesión Individual</h5>
-                        <p style="color: #4E342E; margin-bottom: 20px;">50 min por videollamada</p>
-                        <div style="background-color: #C9A77B; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                            <p style="font-size: 2rem; font-weight: 700; margin: 0;">$80.000</p>
-                            <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP</p>
-                        </div>
-                        <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20la%20sesión%20individual" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
+        <div class="row g-4 mb-5">
+            <!-- Sesión Individual -->
+            <div class="col-md-6 col-lg-4">
+                <div class="plan-card d-flex flex-column justify-content-center align-items-center" 
+                     style="background-color: #FAF8F5; border: 2px solid #C9A77B; padding: 40px 30px; border-radius: 12px; text-align: center; height: 100%; transition: transform 0.3s ease, background-color 0.3s ease;">
+                    <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">💬 Sesión Individual</h5>
+                    <p style="color: #4E342E; margin-bottom: 20px;">50 min por videollamada</p>
+                    <div style="background-color: #C9A77B; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                        <p style="font-size: 2rem; font-weight: 700; margin: 0;">$50.000</p>
+                        <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="plan-card" style="background-color: #FAF8F5; border: 2px solid #C9A77B; padding: 40px 30px; border-radius: 12px; text-align: center;">
-                        <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">🌿 Plan Semanal</h5>
-                        <p style="color: #4E342E; margin-bottom: 20px;">1 sesión + acompañamiento WhatsApp</p>
-                        <div style="background-color: #C9A77B; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                            <p style="font-size: 2rem; font-weight: 700; margin: 0;">$200.000</p>
-                            <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP/mes</p>
-                        </div>
-                        <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20el%20plan%20semanal" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="plan-card" style="background-color: #FAF8F5; border: 3px solid #8B5E3C; padding: 40px 30px; border-radius: 12px; text-align: center; position: relative;">
-                        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #8B5E3C; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
-                            ⭐ MÁS POPULAR
-                        </div>
-                        <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">💪 Plan Mensual Plus</h5>
-                        <p style="color: #4E342E; margin-bottom: 20px;">4 sesiones + test emocional + seguimiento personalizado</p>
-                        <div style="background-color: #8B5E3C; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                            <p style="font-size: 2rem; font-weight: 700; margin: 0;">$470.000</p>
-                            <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP/mes</p>
-                        </div>
-                        <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20el%20plan%20mensual%20plus" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
-                    </div>
+                    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20la%20sesión%20individual" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
                 </div>
             </div>
+
+            <!-- Plan Semanal -->
+            <div class="col-md-6 col-lg-4">
+                <div class="plan-card d-flex flex-column justify-content-center align-items-center" 
+                     style="background-color: #FAF8F5; border: 2px solid #C9A77B; padding: 40px 30px; border-radius: 12px; text-align: center; height: 100%; transition: transform 0.3s ease, background-color 0.3s ease;">
+                    <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">🌿 Plan Semanal</h5>
+                    <p style="color: #4E342E; margin-bottom: 20px;">1 sesión + acompañamiento WhatsApp</p>
+                    <div style="background-color: #C9A77B; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                        <p style="font-size: 2rem; font-weight: 700; margin: 0;">$90.000</p>
+                        <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP/mes</p>
+                    </div>
+                    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20el%20plan%20semanal" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
+                </div>
+            </div>
+
+            <!-- Plan Mensual Plus -->
+            <div class="col-md-6 col-lg-4">
+                <div class="plan-card d-flex flex-column justify-content-center align-items-center" 
+                     style="background-color: #FAF8F5; border: 3px solid #8B5E3C; padding: 40px 30px; border-radius: 12px; text-align: center; position: relative; height: 100%; transition: transform 0.3s ease, background-color 0.3s ease;">
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #8B5E3C; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
+                        ⭐ MÁS POPULAR
+                    </div>
+                    <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">💪 Plan Mensual Plus</h5>
+                    <p style="color: #4E342E; margin-bottom: 20px;">4 sesiones + test emocional + seguimiento personalizado</p>
+                    <div style="background-color: #8B5E3C; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                        <p style="font-size: 2rem; font-weight: 700; margin: 0;">$190.000</p>
+                        <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP/mes</p>
+                    </div>
+                    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20el%20plan%20mensual%20plus" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSS para hover -->
+    <style>
+        .plan-card:hover {
+            background-color: #F0E6DC; /* cambio de color suave */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            cursor: pointer;
+        }
+</section>
 
             <div class="alert" style="background-color: #FAF8F5; border-left: 4px solid #C9A77B; padding: 20px; border-radius: 8px;">
                 <p style="color: #4E342E; margin: 0;">
@@ -339,13 +435,29 @@
                 </p>
             </div>
 
-            <div class="text-center mt-5">
-                <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20agendar%20mi%20sesión%20o%20pedir%20orientación%20gratuita" class="btn btn-custom-primary btn-lg" target="_blank">
-                    📞 Agenda tu sesión o pide tu orientación gratuita
-                </a>
-            </div>
-        </div>
-    </section>
+          <div class="text-center mt-5">
+    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20agendar%20mi%20sesión%20o%20pedir%20orientación%20gratuita" 
+       class="btn btn-custom-primary btn-lg hero-btn" target="_blank">
+        📞 Agenda tu sesión o pide tu orientación gratuita
+    </a>
+</div>
+
+<!-- CSS para animación de botón (si ya lo agregaste antes, no hace falta duplicar) -->
+<style>
+.hero-btn {
+    transition: all 0.3s ease; /* suaviza la animación */
+}
+
+.hero-btn:hover {
+    background-color: #C9A77B !important; /* cambio de color al pasar el mouse */
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important; /* cambio de color al hacer clic */
+    color: #fff !important;
+    transform: scale(0.98); /* efecto de presión */
+}
 
     <!-- Self-Assessment Section -->
     <section id="assessment" class="assessment-section py-5" style="background-color: #FAF8F5;">
@@ -369,107 +481,133 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section py-5" style="background-color: #FFFFFF;">
-        <div class="container">
-            <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
-                Historias que inspiran confianza.
-            </h2>
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
+            Historias que inspiran confianza.
+        </h2>
 
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B;">
-                        <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; font-style: italic;">
-                            "Me sentí acompañada desde el primer mensaje. La atención fue inmediata."
-                        </p>
-                        <p style="color: #8B5E3C; font-weight: 600;">— Laura G., Cali</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B;">
-                        <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; font-style: italic;">
-                            "La terapia online me ayudó a retomar el control de mi ansiedad."
-                        </p>
-                        <p style="color: #8B5E3C; font-weight: 600;">— Carlos R., 28 años</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B;">
-                        <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; font-style: italic;">
-                            "Nos ayudó a comunicarnos como pareja y volver a disfrutar nuestra relación."
-                        </p>
-                        <p style="color: #8B5E3C; font-weight: 600;">— Mariana y Jorge, Bogotá</p>
-                    </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B; transition: all 0.3s ease;">
+                    <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; font-style: italic; margin-bottom: 20px;">
+                        "Me sentí acompañada desde el primer mensaje. La atención fue inmediata."
+                    </p>
+                    <p style="color: #8B5E3C; font-weight: 600;">— Laura G., Cali</p>
                 </div>
             </div>
-
-            <div class="text-center mt-5">
-                <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20quiero%20comenzar%20mi%20historia%20de%20cambio" class="btn btn-custom-primary btn-lg" target="_blank">
-                    🌈 Comienza tu historia de cambio hoy
-                </a>
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B; transition: all 0.3s ease;">
+                    <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; font-style: italic; margin-bottom: 20px;">
+                        "La terapia online me ayudó a retomar el control de mi ansiedad."
+                    </p>
+                    <p style="color: #8B5E3C; font-weight: 600;">— Carlos R., 28 años</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B; transition: all 0.3s ease;">
+                    <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; font-style: italic; margin-bottom: 20px;">
+                        "Nos ayudó a comunicarnos como pareja y volver a disfrutar nuestra relación."
+                    </p>
+                    <p style="color: #8B5E3C; font-weight: 600;">— Ana M., 32 años</p>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Psychologists Section -->
-    <section id="psicologos" style="text-align:center; padding:30px;">
-  <h2>Nuestros Psicólogos</h2>
-
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-
-    <!-- Psicóloga 1 -->
-    <div style="max-width:250px;">
-      <img src="61436905-b8da-4a33-a2ac-0c79dbd9e178 Angélica Mellizo Vásquez.jpeg"
-           alt="Angélica Mellizo Vásquez"
-           style="width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
-      <p><strong>Angélica Mellizo Vásquez</strong><br>Especialista en acompañamiento emocional</p>
+        <div class="text-center mt-5">
+            <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20quiero%20comenzar%20mi%20historia%20de%20cambio" 
+               class="btn btn-custom-primary btn-lg">
+                🌈 Comienza tu historia de cambio hoy
+            </a>
+        </div>
     </div>
-
-    <!-- Psicólogo 2 -->
-    <div style="max-width:250px;">
-      <img src="75880545-abe1-40c1-b943-ef8f715ac69c Mag. Manuel Guerrero Gómez.jpeg"
-           alt="Mag. Manuel Guerrero Gómez"
-           style="width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
-      <p><strong>Mag. Manuel Guerrero Gómez</strong><br>Experto en atención a víctimas de bullying</p>
-    </div>
-
-    <!-- Psicóloga 3 -->
-    <div style="max-width:250px;">
-      <img src="107cfdf4-011d-401b-905c-340f832e6582 Dra. Marisol Benítez Urrea.jpeg"
-           alt="Dra. Marisol Benítez Urrea"
-           style="width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
-      <p><strong>Dra. Marisol Benítez Urrea</strong><br>Especialista en apoyo psicológico escolar</p>
-    </div>
-
-  </div>
 </section>
 
+<section id="psychologists">
+    <h2>Conoce a Nuestros Psicólogos</h2>
+    <div class="profiles">
+        <!-- Psicólogo 1 -->
+        <div class="profile-card">
+            <img src="angelica.jpg" alt="Angelica Mellizo Vasquez">
+            <h3>Angelica Mellizo Vasquez</h3>
+            <button onclick="showInfo('info1')">Ver información</button>
+            <div class="info-box" id="info1">
+                <h3>Angelica Mellizo Vasquez</h3>
+                <p>Especialización: Psicología infantil y familiar</p>
+                <p>Experiencia: 5 años ayudando a niños y adolescentes</p>
+                <button onclick="closeInfo('info1')">Cerrar</button>
+            </div>
+        </div>
+        <!-- Psicólogo 2 -->
+        <div class="profile-card">
+            <img src="manuel.jpg" alt="Manuel Guerrero">
+            <h3>Manuel Guerrero</h3>
+            <button onclick="showInfo('info2')">Ver información</button>
+            <div class="info-box" id="info2">
+                <h3>Manuel Guerrero</h3>
+                <p>Especialización: Psicología clínica y terapia de adultos</p>
+                <p>Experiencia: 8 años en manejo de ansiedad y depresión</p>
+                <button onclick="closeInfo('info2')">Cerrar</button>
+            </div>
+        </div>
+        <!-- Psicólogo 3 -->
+        <div class="profile-card">
+            <img src="marisol.jpg" alt="Marisol Benites">
+            <h3>Marisol Benites</h3>
+            <button onclick="showInfo('info3')">Ver información</button>
+            <div class="info-box" id="info3">
+                <h3>Marisol Benites</h3>
+                <p>Especialización: Psicología educativa y coaching personal</p>
+                <p>Experiencia: 6 años apoyando a jóvenes y adultos</p>
+                <button onclick="closeInfo('info3')">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</section>  
 
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section py-5" style="background-color: #FAF8F5;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title mb-4" style="color: #8B5E3C;">
-                        Tu bienestar puede empezar hoy mismo.
-                    </h2>
-                    <p style="color: #4E342E; font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
-                        Agenda una cita o escríbenos y te orientamos sin costo. Tu salud mental merece atención profesional, sin barreras ni esperas.
-                    </p>
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                        <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20hablar%20ahora" class="btn btn-custom-primary btn-lg" target="_blank">
-                            💬 Hablar por WhatsApp ahora
-                        </a>
-                        <a href="#plans" class="btn btn-custom-secondary btn-lg">
-                            📆 Agendar mi sesión online
-                        </a>
-                    </div>
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5" style="background-color: #FAF8F5;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-4" style="color: #8B5E3C;">
+                    Tu bienestar puede empezar hoy mismo.
+                </h2>
+                <p style="color: #4E342E; font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
+                    Agenda una cita o escríbenos y te orientamos sin costo. Tu salud mental merece atención profesional, sin barreras ni esperas.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20hablar%20ahora" class="btn btn-custom-primary btn-lg hover-button" target="_blank">
+                        💬 Hablar por WhatsApp ahora
+                    </a>
+                    <a href="#plans" class="btn btn-custom-secondary btn-lg hover-button">
+                        📆 Agendar mi sesión online
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- CSS para animación de botones -->
+<style>
+.hover-button {
+    transition: all 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: #A37C5C; /* color sutil al pasar el mouse */
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+.hover-button:active {
+    background-color: #8B5E3C; /* color al hacer clic */
+    transform: scale(0.98);
+}
+
+ 
 
     <!-- Footer -->
     <footer style="background-color: #8B5E3C; color: white; padding: 40px 0; text-align: center;">
@@ -564,6 +702,34 @@
             </div>
         </div>
     </div>
+    <!-- Botón Flotante de Emergencia -->
+<a href="https://wa.me/573001234567?text=Emergencia" target="_blank" class="boton-emergencia">⚠️ Emergencia</a>
+
+<style>
+  /* Estilos para el botón flotante */
+  .boton-emergencia {
+    position: fixed;
+    bottom: 40px; /* distancia desde el borde inferior */
+    right: 20px;  /* distancia desde el borde derecho */
+    background-color: #E53935; /* color inicial rojo suave */
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 9999;
+    font-size: 14px;
+  }
+
+  /* Animación al pasar el mouse */
+  .boton-emergencia:hover {
+    transform: scale(1.1);
+    background-color: #D32F2F; /* rojo un poco más intenso */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  }
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
