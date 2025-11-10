@@ -69,39 +69,114 @@
 </head>
 <body>
 
- <!-- Tu Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#inicio">BullyGuard</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-         <li class="nav-item"><a class="nav-link" href="#porque-nosotros">Por qué nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#plans">Planes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
-           <li class="nav-item"><a class="nav-link" href="#psicologos">Psicólogos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top shadow-sm">
+  <div class="container">
+    <!-- 🔹 Logotipo o texto que lleva al inicio -->
+    <a class="navbar-brand fw-bold" href="#inicio">
+      <img src="images/logo-bullyguard.png" alt="BullyGuard Logo" class="logo me-2">
+      BullyGuard
+    </a>
 
-<section id="inicio" class="text-center">
-  <a href="#inicio">
-    <img src="logo.jpeg" alt="Logo BullyGuard" style="width: 10%;" class="img-fluid mb-3">
-  </a>
+    <!-- Botón responsive -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Enlaces -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#porque-nosotros">Por qué nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#plans">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#psychologists">Psicólogos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     
-  <h1>Bienvenido a BullyGuard</h1>
-  <p>
-    En BullyGuard nos dedicamos a acompañarte psicológicamente de manera segura y accesible. 
-    Ofrecemos sesiones confidenciales con psicólogos certificados, planes flexibles adaptados a tus necesidades, 
-    y un espacio seguro para tu bienestar emocional. Tu salud mental es nuestra prioridad.
-  </p>
-  <button class="boton-flotante">Tu bienestar es importante para nosotros</button>
+<section id="inicio" class="text-center">
+ <!-- Psychologists Section -->
+<section id="psychologists" class="psychologists-section py-5" style="background-color: #FAF8F5;">
+  <div class="container">
+    <h2 class="section-title section-title-color text-center mb-5">
+      Conoce a Nuestros Psicólogos
+    </h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Psicólogo 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="profile-card text-center">
+          <img src="images/angelica-mellizo.jpeg" alt="Angélica Mellizo Vásquez" class="img-fluid rounded-4 mb-3">
+          <h3>Angélica Mellizo Vásquez</h3>
+          <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info1')">Ver información</button>
+          <div class="info-box" id="info1">
+            <h4>Angélica Mellizo Vásquez</h4>
+            <p>Especialización: Psicología infantil y familiar</p>
+            <p>Experiencia: 5 años ayudando a niños y adolescentes</p>
+            <button class="btn btn-secondary btn-sm" onclick="closeInfo('info1')">Cerrar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Psicólogo 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="profile-card text-center">
+          <img src="images/manuel-guerrero.jpeg" alt="Mag. Manuel Guerrero Gómez" class="img-fluid rounded-4 mb-3">
+          <h3>Manuel Guerrero Gómez</h3>
+          <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info2')">Ver información</button>
+          <div class="info-box" id="info2">
+            <h4>Manuel Guerrero Gómez</h4>
+            <p>Especialización: Psicología clínica y terapia de adultos</p>
+            <p>Experiencia: 8 años en manejo de ansiedad y depresión</p>
+            <button class="btn btn-secondary btn-sm" onclick="closeInfo('info2')">Cerrar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Psicólogo 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="profile-card text-center">
+          <img src="images/marisol-benitez.jpeg" alt="Dra. Marisol Benítez Urrea" class="img-fluid rounded-4 mb-3">
+          <h3>Marisol Benítez Urrea</h3>
+          <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info3')">Ver información</button>
+          <div class="info-box" id="info3">
+            <h4>Marisol Benítez Urrea</h4>
+            <p>Especialización: Psicología educativa y coaching personal</p>
+            <p>Experiencia: 6 años apoyando a jóvenes y adultos</p>
+            <button class="btn btn-secondary btn-sm" onclick="closeInfo('info3')">Cerrar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function showInfo(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  function closeInfo(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
+
+  
+ <!-- Sección de Inicio -->
+<section id="inicio" class="hero-section d-flex align-items-center text-center" style="background-color: #FAF8F5; min-height: 100vh; padding-top: 100px;">
+  <div class="container">
+    <h1 class="fw-bold mb-4">Bienvenido a <span class="text-primary">BullyGuard</span></h1>
+    <p class="lead mb-4">
+      En <strong>BullyGuard</strong> nos dedicamos a acompañarte psicológicamente de manera segura y accesible. 
+      Ofrecemos sesiones confidenciales con psicólogos certificados, planes flexibles adaptados a tus necesidades 
+      y un espacio seguro para tu bienestar emocional. Tu salud mental es nuestra prioridad.
+    </p>
+    <a href="#plans" class="btn btn-custom-primary hero-btn">Tu bienestar es importante para nosotros</a>
+  </div>
 </section>
 
 <!-- Hero Section -->
@@ -850,61 +925,72 @@ function startTest(event) {
 }
 </style>
 
-  
 <!-- Psychologists Section -->
 <section id="psychologists" class="psychologists-section py-5" style="background-color: #FAF8F5;">
-    <div class="container">
-        <h2 class="section-title section-title-color text-center mb-5">
-            Conoce a Nuestros Psicólogos
-        </h2>
-        <div class="row g-4 justify-content-center">
-            <!-- Psicólogo 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="profile-card text-center">
-                   <img src="angelica-mellizo.jpeg" alt="Angélica Mellizo Vásquez" class="img-fluid rounded-4 mb-3">
-                    <h3>Angélica Mellizo Vásquez</h3>
-                    <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info1')">Ver información</button>
-                    <div class="info-box" id="info1">
-                        <h4>Angélica Mellizo Vásquez</h4>
-                        <p>Especialización: Psicología infantil y familiar</p>
-                        <p>Experiencia: 5 años ayudando a niños y adolescentes</p>
-                        <button class="btn btn-secondary btn-sm" onclick="closeInfo('info1')">Cerrar</button>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <h2 class="section-title section-title-color text-center mb-5">
+      Conoce a Nuestros Psicólogos
+    </h2>
+    <div class="row g-4 justify-content-center">
 
-            <!-- Psicólogo 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="profile-card text-center">
-                  <img src="images/manuel-guerrero.jpeg" alt="Mag. Manuel Guerrero Gómez" class="img-fluid rounded-4 mb-3">
-                    <h3>Manuel Guerrero Gómez</h3>
-                    <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info2')">Ver información</button>
-                    <div class="info-box" id="info2">
-                        <h4>Manuel Guerrero Gómez</h4>
-                        <p>Especialización: Psicología clínica y terapia de adultos</p>
-                        <p>Experiencia: 8 años en manejo de ansiedad y depresión</p>
-                        <button class="btn btn-secondary btn-sm" onclick="closeInfo('info2')">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Psicólogo 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="profile-card text-center">
-                   <img src="images/marisol-benitez.jpeg" alt="Dra. Marisol Benítez Urrea" class="img-fluid rounded-4 mb-3">
-                    <h3>Marisol Benítez Urrea</h3>
-                    <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info3')">Ver información</button>
-                    <div class="info-box" id="info3">
-                        <h4>Marisol Benítez Urrea</h4>
-                        <p>Especialización: Psicología educativa y coaching personal</p>
-                        <p>Experiencia: 6 años apoyando a jóvenes y adultos</p>
-                        <button class="btn btn-secondary btn-sm" onclick="closeInfo('info3')">Cerrar</button>
-                    </div>
-                </div>
-            </div>
+      <!-- Psicólogo 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="profile-card text-center">
+          <img src="images/angelica-mellizo.jpeg" alt="Angélica Mellizo Vásquez" class="img-fluid rounded-4 mb-3">
+          <h3>Angélica Mellizo Vásquez</h3>
+          <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info1')">Ver información</button>
+          <div class="info-box" id="info1">
+            <h4>Angélica Mellizo Vásquez</h4>
+            <p>Especialización: Psicología infantil y familiar</p>
+            <p>Experiencia: 5 años ayudando a niños y adolescentes</p>
+            <button class="btn btn-secondary btn-sm" onclick="closeInfo('info1')">Cerrar</button>
+          </div>
         </div>
+      </div>
+
+      <!-- Psicólogo 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="profile-card text-center">
+          <img src="images/manuel-guerrero.jpeg" alt="Mag. Manuel Guerrero Gómez" class="img-fluid rounded-4 mb-3">
+          <h3>Manuel Guerrero Gómez</h3>
+          <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info2')">Ver información</button>
+          <div class="info-box" id="info2">
+            <h4>Manuel Guerrero Gómez</h4>
+            <p>Especialización: Psicología clínica y terapia de adultos</p>
+            <p>Experiencia: 8 años en manejo de ansiedad y depresión</p>
+            <button class="btn btn-secondary btn-sm" onclick="closeInfo('info2')">Cerrar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Psicólogo 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="profile-card text-center">
+          <img src="images/marisol-benitez.jpeg" alt="Dra. Marisol Benítez Urrea" class="img-fluid rounded-4 mb-3">
+          <h3>Marisol Benítez Urrea</h3>
+          <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info3')">Ver información</button>
+          <div class="info-box" id="info3">
+            <h4>Marisol Benítez Urrea</h4>
+            <p>Especialización: Psicología educativa y coaching personal</p>
+            <p>Experiencia: 6 años apoyando a jóvenes y adultos</p>
+            <button class="btn btn-secondary btn-sm" onclick="closeInfo('info3')">Cerrar</button>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
+
+<script>
+  function showInfo(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  function closeInfo(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
+  
 
 <!-- CSS -->
 <style>
