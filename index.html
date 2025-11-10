@@ -18,7 +18,6 @@
     
  <!-- Bootstrap CSS</head> -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     
     <!-- Google Fonts - Optimized for SEO and Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,26 +27,60 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 <style>
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-  filter: brightness(1) saturate(1);
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen Hover Avanzada</title>
+  
+  <style>
+    /* Estilos para todas las imágenes */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 30px auto;
+      border-radius: 15px;
+      transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+      filter: brightness(1) saturate(1) hue-rotate(0deg);
+    }
 
-img:hover {
-  transform: scale(1.05);
-  filter: brightness(1.05) saturate(1.1);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  cursor: pointer;
-}   
-</head>    
+    /* Efecto al pasar el cursor sobre la imagen */
+    img:hover {
+      transform: scale(1.08) rotate(-1deg);
+      filter: brightness(1.1) saturate(1.2) hue-rotate(15deg);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+      cursor: pointer;
+    }
+
+    body {
+      background-color: #FAF8F5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #4E342E;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
 <body>
 
- <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top shadow-sm">
+  <h1>Galería con Efecto Hover</h1>
+
+  <!-- Reemplaza "tu-imagen.jpg" con la ruta de tu imagen -->
+  <img src="tu-imagen.jpg" alt="hero_videocall.png">
+
+  <img src="tu-imagen2.jpg" alt="attention_types.png">
+
+</body>
+</html>
+
+ <!-- Tu Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#inicio">BullyGuard</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -67,17 +100,16 @@ img:hover {
     </div>
   </nav>
 
-  <!-- Sección Inicio -->
-  <section id="inicio">
-    <h1>Bienvenido a BullyGuard</h1>
-    <p>
-      En BullyGuard nos dedicamos a acompañarte psicológicamente de manera segura y accesible. 
-      Ofrecemos sesiones confidenciales con psicólogos certificados, planes flexibles adaptados a tus necesidades, 
-      y un espacio seguro para tu bienestar emocional. Tu salud mental es nuestra prioridad.
-    </p>
-    <button class="boton-flotante">Tu bienestar es importante para nosotros</button>
-  </section>
-    
+<section id="inicio">
+  <h1>Bienvenido a BullyGuard</h1>
+  <p>
+    En BullyGuard nos dedicamos a acompañarte psicológicamente de manera segura y accesible. 
+    Ofrecemos sesiones confidenciales con psicólogos certificados, planes flexibles adaptados a tus necesidades, 
+    y un espacio seguro para tu bienestar emocional. Tu salud mental es nuestra prioridad.
+  </p>
+  <button class="boton-flotante">Tu bienestar es importante para nosotros</button>
+</section>
+
 <!-- Hero Section -->
 <section id="hero" class="hero-section" style="background-color: #FAF8F5; padding: 80px 0;">
     <div class="container">
@@ -109,77 +141,108 @@ img:hover {
 
 <!-- CSS para los botones -->
 <style>
+.btn-custom-primary {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-custom-secondary {
+    background-color: #C9A77B !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .hero-btn {
     transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-    background-color: #C9A77B !important; /* cambio de color suave al pasar mouse */
+    background-color: #C9A77B !important;
     color: #fff !important;
 }
 
 .hero-btn:active {
-    background-color: #8B5E3C !important; /* cambio de color al tocar/click */
+    background-color: #8B5E3C !important;
     color: #fff !important;
-    transform: scale(0.98);
-}
-
-
- 
-    <!-- Why Us Section -->
-    <section id="why-us" class="why-us-section py-5" style="background-color: #FFFFFF;">
-        <div class="container">
-            <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
-                Nos tomamos tu salud mental con la seriedad y el amor que merece.
-            </h2>
-            
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-center" style="color: #4E342E; font-size: 1.1rem; line-height: 1.8;">
-                        En nuestro servicio de acompañamiento psicológico creemos que cada persona merece un espacio seguro para sanar, crecer y sentirse escuchada. Por eso combinamos tres pilares que nos diferencian:
-                    </p>
-                </div>
+    transf
+    
+<!-- Why Us Section -->
+<section id="why-us" class="why-us-section py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
+            Nos tomamos tu salud mental con la seriedad y el amor que merece.
+        </h2>
+        
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <p class="text-center" style="color: #4E342E; font-size: 1.1rem; line-height: 1.8;">
+                    En nuestro servicio de acompañamiento psicológico creemos que cada persona merece un espacio seguro para sanar, crecer y sentirse escuchada. Por eso combinamos tres pilares que nos diferencian:
+                </p>
             </div>
+        </div>
 
-            <div class="row g-4 mb-5">
-                <div class="col-md-4">
-                    <div class="card h-100" style="border: none; background-color: #FAF8F5; box-shadow: 0 5px 20px rgba(139, 94, 60, 0.1);">
-                        <div class="card-body text-center">
-                            <div class="feature-icon mb-3">🔐</div>
-                            <h5 class="card-title" style="color: #8B5E3C;">Seguridad</h5>
-                            <p class="card-text" style="color: #4E342E;">Sesiones cifradas y confidenciales. Tu información está protegida.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100" style="border: none; background-color: #FAF8F5; box-shadow: 0 5px 20px rgba(139, 94, 60, 0.1);">
-                        <div class="card-body text-center">
-                            <div class="feature-icon mb-3">⚡</div>
-                            <h5 class="card-title" style="color: #8B5E3C;">Accesibilidad</h5>
-                            <p class="card-text" style="color: #4E342E;">Atención inmediata por WhatsApp, sin procesos largos ni complicados.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100" style="border: none; background-color: #FAF8F5; box-shadow: 0 5px 20px rgba(139, 94, 60, 0.1);">
-                        <div class="card-body text-center">
-                            <div class="feature-icon mb-3">🎯</div>
-                            <h5 class="card-title" style="color: #8B5E3C;">Flexibilidad</h5>
-                            <p class="card-text" style="color: #4E342E;">Planes diarios, semanales o mensuales adaptados a ti.</p>
-                        </div>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100" style="border: none; background-color: #FAF8F5; box-shadow: 0 5px 20px rgba(139, 94, 60, 0.1);">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">🔐</div>
+                        <h5 class="card-title" style="color: #8B5E3C;">Seguridad</h5>
+                        <p class="card-text" style="color: #4E342E;">Sesiones cifradas y confidenciales. Tu información está protegida.</p>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card h-100" style="border: none; background-color: #FAF8F5; box-shadow: 0 5px 20px rgba(139, 94, 60, 0.1);">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">⚡</div>
+                        <h5 class="card-title" style="color: #8B5E3C;">Accesibilidad</h5>
+                        <p class="card-text" style="color: #4E342E;">Atención inmediata por WhatsApp, sin procesos largos ni complicados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100" style="border: none; background-color: #FAF8F5; box-shadow: 0 5px 20px rgba(139, 94, 60, 0.1);">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">🎯</div>
+                        <h5 class="card-title" style="color: #8B5E3C;">Flexibilidad</h5>
+                        <p class="card-text" style="color: #4E342E;">Planes diarios, semanales o mensuales adaptados a ti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-           <div class="text-center">
-    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20agendar%20mi%20primera%20sesión" 
-       class="btn btn-custom-primary hero-btn" target="_blank">
-        💚 Agenda tu primera sesión sin compromiso
-    </a>
-</div>
+        <div class="text-center">
+            <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20agendar%20mi%20primera%20sesión" 
+               class="btn btn-custom-primary hero-btn" target="_blank">
+                💚 Agenda tu primera sesión sin compromiso
+            </a>
+        </div>
+    </div>
+</section>
 
 <!-- CSS para animación de botón -->
 <style>
+/* Estilo base del botón personalizado */
+.btn-custom-primary {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Animación del botón */
 .hero-btn {
     transition: all 0.3s ease; /* suaviza la animación */
 }
@@ -194,193 +257,296 @@ img:hover {
     color: #fff !important;
     transform: scale(0.98); /* pequeño efecto de presión */
 }
+</style>
 
-
-    <!-- Services Section -->
-    <section id="services" class="services-section py-5" style="background-color: #FAF8F5;">
-        <div class="container">
-            <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
-                Apoyo psicológico para cada etapa de la vida.
-            </h2>
-            
-            <p class="text-center mb-5" style="color: #4E342E; font-size: 1.05rem;">
-                Nuestros psicólogos especializados atienden a:
-            </p>
-
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card" style="background-color: #FFFFFF; border-left: 4px solid #C9A77B; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
-                        <h5 style="color: #8B5E3C; margin-bottom: 15px;">👶 Niños</h5>
-                        <ul style="color: #4E342E; list-style: none; padding: 0;">
-                            <li>✓ Autoestima</li>
-                            <li>✓ Adaptación escolar</li>
-                            <li>✓ Bullying</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card" style="background-color: #FFFFFF; border-left: 4px solid #C9A77B; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
-                        <h5 style="color: #8B5E3C; margin-bottom: 15px;">👦 Adolescentes</h5>
-                        <ul style="color: #4E342E; list-style: none; padding: 0;">
-                            <li>✓ Ansiedad</li>
-                            <li>✓ Presión social</li>
-                            <li>✓ Orientación vocacional</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card" style="background-color: #FFFFFF; border-left: 4px solid #C9A77B; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
-                        <h5 style="color: #8B5E3C; margin-bottom: 15px;">🧑 Adultos</h5>
-                        <ul style="color: #4E342E; list-style: none; padding: 0;">
-                            <li>✓ Estrés</li>
-                            <li>✓ Depresión</li>
-                            <li>✓ Crisis personales</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card" style="background-color: #FFFFFF; border-left: 4px solid #C9A77B; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
-                        <h5 style="color: #8B5E3C; margin-bottom: 15px;">💑 Parejas y Familias</h5>
-                        <ul style="color: #4E342E; list-style: none; padding: 0;">
-                            <li>✓ Comunicación</li>
-                            <li>✓ Rupturas</li>
-                            <li>✓ Manejo del conflicto</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <img src="attention_types.png" alt="Tipos de atención psicológica" class="img-fluid rounded-4 mb-5" style="box-shadow: 0 10px 40px rgba(139, 94, 60, 0.15);">
-                </div>
-            </div>
-
-            <p class="text-center mb-5" style="color: #4E342E; font-size: 1.05rem; font-style: italic;">
-                Sea cual sea tu historia, aquí encuentras un espacio empático donde puedes hablar sin miedo.
-            </p>
-
-         <div class="text-center">
-    <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20necesito%20ayuda%20para%20elegir%20el%20plan%20ideal" 
-       class="btn btn-custom-primary hero-btn" target="_blank">
-        📲 Escribenos y te ayudamos a elegir el plan ideal
-    </a>
-</div>
-
-<!-- CSS para animación de botón (si ya agregaste el anterior, no hace falta duplicar) -->
-<style>
-.hero-btn {
-    transition: all 0.3s ease; /* suaviza la animación */
-}
-
-.hero-btn:hover {
-    background-color: #C9A77B !important; /* cambio de color al pasar el mouse */
-    color: #fff !important;
-}
-
-.hero-btn:active {
-    background-color: #8B5E3C !important; /* cambio de color al hacer clic */
-    color: #fff !important;
-    transform: scale(0.98); /* pequeño efecto de presión */
-}
-
-
-
-    <!-- Trust Section -->
-    <section id="trust" class="trust-section py-5" style="background-color: #FFFFFF;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="security_lock.png" alt="Seguridad y confianza" class="img-fluid rounded-4" style="box-shadow: 0 10px 40px rgba(139, 94, 60, 0.15);">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-title mb-4" style="color: #8B5E3C;">
-                        Tu bienestar está protegido.
-                    </h2>
-                    <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; margin-bottom: 25px;">
-                        Sabemos que tu información es sensible. Por eso:
-                    </p>
-                    <ul style="color: #4E342E; font-size: 1.05rem; line-height: 2;">
-                        <li>✓ Usamos plataformas con <strong>cifrado de extremo a extremo</strong></li>
-                        <li>✓ Psicólogos <strong>certificados por COLPSIC</strong></li>
-                        <li>✓ Políticas de <strong>cancelación y reembolso claras y justas</strong></li>
-                    </ul>
-                    <p style="color: #8B5E3C; font-size: 1.1rem; margin-top: 30px; font-weight: 600;">
-                        🕊️ Confidencialidad y ética en cada sesión.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Unique Section -->
-    <section id="unique" class="unique-section py-5" style="background-color: #FAF8F5;">
-        <div class="container">
-            <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
-                Más que terapia, te damos acompañamiento humano en tiempo real.
-            </h2>
-
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-3">
-                    <div class="unique-card" style="background-color: #FFFFFF; padding: 25px; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">💬</div>
-                        <h5 style="color: #8B5E3C;">Atención inmediata</h5>
-                        <p style="color: #4E342E;">Por WhatsApp</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="unique-card" style="background-color: #FFFFFF; padding: 25px; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">📆</div>
-                        <h5 style="color: #8B5E3C;">Horarios flexibles</h5>
-                        <p style="color: #4E342E;">Incluso fines de semana</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="unique-card" style="background-color: #FFFFFF; padding: 25px; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">❤️</div>
-                        <h5 style="color: #8B5E3C;">Seguimiento</h5>
-                        <p style="color: #4E342E;">Entre sesiones (según plan)</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="unique-card" style="background-color: #FFFFFF; padding: 25px; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🧠</div>
-                        <h5 style="color: #8B5E3C;">Primeros auxilios</h5>
-                        <p style="color: #4E342E;">Emocionales certificados</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col-lg-6 mx-auto">
-                    <img src="unique_accompaniment.png" alt="Acompañamiento humano" class="img-fluid rounded-4" style="box-shadow: 0 10px 40px rgba(139, 94, 60, 0.15);">
-                </div>
-            </div>
-
-            <div class="text-center">
-                <a href="#plans" class="btn btn-custom-primary">
-                    🔔 Comienza tu proceso de bienestar hoy
-                </a>
-            </div>
-        </div>
-    </section>
-<!-- Plans Section -->
-<section id="plans" class="plans-section py-5" style="background-color: #FFFFFF;">
+<!-- Services Section -->
+<section id="services" class="services-section py-5" style="background-color: #FAF8F5;">
     <div class="container">
         <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
+            Apoyo psicológico para cada etapa de la vida.
+        </h2>
+        
+        <p class="text-center mb-5" style="color: #4E342E; font-size: 1.05rem;">
+            Nuestros psicólogos especializados atienden a:
+        </p>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card" style="background-color: #FFFFFF; border-left: 4px solid #C9A77B; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
+                    <h5 style="color: #8B5E3C; margin-bottom: 15px;">👶 Niños</h5>
+                    <ul style="color: #4E342E; list-style: none; padding: 0;">
+                        <li>✓ Autoestima</li>
+                        <li>✓ Adaptación escolar</li>
+                        <li>✓ Bullying</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card" style="background-color: #FFFFFF; border-left: 4px solid #C9A77B; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
+                    <h5 style="color: #8B5E3C; margin-bottom: 15px;">👦 Adolescentes</h5>
+                    <ul style="color: #4E342E; list-style: none; padding: 0;">
+                        <li>✓ Ansiedad</li>
+                        <li>✓ Presión social</li>
+                        <li>✓ Orientación vocacional</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card" style="background-color: #FFFFFF; border-left: 4px solid #C9A77B; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
+                    <h5 style="color: #8B5E3C; margin-bottom: 15px;">🧑 Adultos</h5>
+                    <ul style="color: #4E342E; list-style: none; padding: 0;">
+                        <li>✓ Estrés</li>
+                        <li>✓ Depresión</li>
+                        <li>✓ Crisis personales</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card" style="background-color: #FFFFFF; border-left: 4px solid #C9A77B; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);">
+                    <h5 style="color: #8B5E3C; margin-bottom: 15px;">💑 Parejas y Familias</h5>
+                    <ul style="color: #4E342E; list-style: none; padding: 0;">
+                        <li>✓ Comunicación</li>
+                        <li>✓ Rupturas</li>
+                        <li>✓ Manejo del conflicto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <img src="attention_types.png" alt="Tipos de atención psicológica" class="img-fluid rounded-4 mb-5" style="box-shadow: 0 10px 40px rgba(139, 94, 60, 0.15);">
+            </div>
+        </div>
+
+        <p class="text-center mb-5" style="color: #4E342E; font-size: 1.05rem; font-style: italic;">
+            Sea cual sea tu historia, aquí encuentras un espacio empático donde puedes hablar sin miedo.
+        </p>
+
+        <div class="text-center">
+            <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20necesito%20ayuda%20para%20elegir%20el%20plan%20ideal" 
+               class="btn btn-custom-primary hero-btn" target="_blank">
+                📲 Escríbenos y te ayudamos a elegir el plan ideal
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CSS para animación de botón -->
+<style>
+/* Estilo base del botón */
+.btn-custom-primary {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Animación de transición */
+.hero-btn {
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #C9A77B !important;
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    transform: scale(0.98);
+}
+</style>
+
+<!-- Trust Section -->
+<section id="trust" class="trust-section py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
+                <img src="security_lock.png" 
+                     alt="Seguridad y confianza" 
+                     class="trust-img img-fluid rounded-4">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="section-title mb-4" style="color: #8B5E3C;">
+                    Tu bienestar está protegido.
+                </h2>
+                <p class="trust-text">
+                    Sabemos que tu información es sensible. Por eso:
+                </p>
+                <ul class="trust-list">
+                    <li>✓ Usamos plataformas con <strong>cifrado de extremo a extremo</strong></li>
+                    <li>✓ Psicólogos <strong>certificados por COLPSIC</strong></li>
+                    <li>✓ Políticas de <strong>cancelación y reembolso claras y justas</strong></li>
+                </ul>
+                <p class="trust-note">
+                    🕊️ Confidencialidad y ética en cada sesión.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+.trust-img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 40px rgba(139, 94, 60, 0.15);
+}
+
+.trust-text {
+    color: #4E342E;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.trust-list {
+    color: #4E342E;
+    font-size: 1.05rem;
+    line-height: 2;
+    padding-left: 20px; /* un poco de sangría */
+}
+
+.trust-note {
+    color: #8B5E3C;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    font-weight: 600;
+}
+</style>
+
+<!-- Unique Section -->
+<section id="unique" class="unique-section py-5" style="background-color: #FAF8F5;">
+    <div class="container">
+        <h2 class="section-title mb-5 text-center" style="color: #8B5E3C;">
+            Más que terapia, te damos acompañamiento humano en tiempo real.
+        </h2>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-3">
+                <div class="unique-card text-center">
+                    <div class="unique-icon">💬</div>
+                    <h5 class="unique-title">Atención inmediata</h5>
+                    <p class="unique-text">Por WhatsApp</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="unique-card text-center">
+                    <div class="unique-icon">📆</div>
+                    <h5 class="unique-title">Horarios flexibles</h5>
+                    <p class="unique-text">Incluso fines de semana</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="unique-card text-center">
+                    <div class="unique-icon">❤️</div>
+                    <h5 class="unique-title">Seguimiento</h5>
+                    <p class="unique-text">Entre sesiones (según plan)</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="unique-card text-center">
+                    <div class="unique-icon">🧠</div>
+                    <h5 class="unique-title">Primeros auxilios</h5>
+                    <p class="unique-text">Emocionales certificados</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <img src="unique_accompaniment.png" alt="Acompañamiento humano" class="unique-img img-fluid rounded-4">
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="#plans" class="btn btn-custom-primary hero-btn">
+                🔔 Comienza tu proceso de bienestar hoy
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+.unique-card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);
+}
+
+.unique-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.unique-title {
+    color: #8B5E3C;
+    margin-bottom: 10px;
+}
+
+.unique-text {
+    color: #4E342E;
+}
+
+/* Imagen responsiva con sombra */
+.unique-img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 40px rgba(139, 94, 60, 0.15);
+}
+
+/* Botón personalizado (si ya está definido antes, solo asegúrate que tenga transition) */
+.btn-custom-primary {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hero-btn {
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #C9A77B !important;
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    transform: scale(0.98);
+}
+</style>
+
+ <!-- Plans Section -->
+<section id="plans" class="plans-section py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <h2 class="section-title mb-5 text-center" style="color: #8B5E3C;">
             Planes pensados para tu ritmo y presupuesto.
         </h2>
 
         <div class="row g-4 mb-5">
             <!-- Sesión Individual -->
             <div class="col-md-6 col-lg-4">
-                <div class="plan-card d-flex flex-column justify-content-center align-items-center" 
-                     style="background-color: #FAF8F5; border: 2px solid #C9A77B; padding: 40px 30px; border-radius: 12px; text-align: center; height: 100%; transition: transform 0.3s ease, background-color 0.3s ease;">
-                    <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">💬 Sesión Individual</h5>
-                    <p style="color: #4E342E; margin-bottom: 20px;">50 min por videollamada</p>
-                    <div style="background-color: #C9A77B; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                        <p style="font-size: 2rem; font-weight: 700; margin: 0;">$50.000</p>
-                        <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP</p>
+                <div class="plan-card d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="plan-title">💬 Sesión Individual</h5>
+                    <p class="plan-desc">50 min por videollamada</p>
+                    <div class="plan-price">
+                        <p>$50.000</p>
+                        <p>COP</p>
                     </div>
                     <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20la%20sesión%20individual" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
                 </div>
@@ -388,13 +554,12 @@ img:hover {
 
             <!-- Plan Semanal -->
             <div class="col-md-6 col-lg-4">
-                <div class="plan-card d-flex flex-column justify-content-center align-items-center" 
-                     style="background-color: #FAF8F5; border: 2px solid #C9A77B; padding: 40px 30px; border-radius: 12px; text-align: center; height: 100%; transition: transform 0.3s ease, background-color 0.3s ease;">
-                    <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">🌿 Plan Semanal</h5>
-                    <p style="color: #4E342E; margin-bottom: 20px;">1 sesión + acompañamiento WhatsApp</p>
-                    <div style="background-color: #C9A77B; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                        <p style="font-size: 2rem; font-weight: 700; margin: 0;">$90.000</p>
-                        <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP/mes</p>
+                <div class="plan-card d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="plan-title">🌿 Plan Semanal</h5>
+                    <p class="plan-desc">1 sesión + acompañamiento WhatsApp</p>
+                    <div class="plan-price">
+                        <p>$90.000</p>
+                        <p>COP/mes</p>
                     </div>
                     <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20el%20plan%20semanal" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
                 </div>
@@ -402,48 +567,121 @@ img:hover {
 
             <!-- Plan Mensual Plus -->
             <div class="col-md-6 col-lg-4">
-                <div class="plan-card d-flex flex-column justify-content-center align-items-center" 
-                     style="background-color: #FAF8F5; border: 3px solid #8B5E3C; padding: 40px 30px; border-radius: 12px; text-align: center; position: relative; height: 100%; transition: transform 0.3s ease, background-color 0.3s ease;">
-                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #8B5E3C; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
-                        ⭐ MÁS POPULAR
-                    </div>
-                    <h5 style="color: #8B5E3C; margin-bottom: 15px; font-size: 1.3rem;">💪 Plan Mensual Plus</h5>
-                    <p style="color: #4E342E; margin-bottom: 20px;">4 sesiones + test emocional + seguimiento personalizado</p>
-                    <div style="background-color: #8B5E3C; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                        <p style="font-size: 2rem; font-weight: 700; margin: 0;">$190.000</p>
-                        <p style="font-size: 0.9rem; margin: 5px 0 0 0;">COP/mes</p>
+                <div class="plan-card popular d-flex flex-column justify-content-center align-items-center">
+                    <div class="popular-badge">⭐ MÁS POPULAR</div>
+                    <h5 class="plan-title">💪 Plan Mensual Plus</h5>
+                    <p class="plan-desc">4 sesiones + test emocional + seguimiento personalizado</p>
+                    <div class="plan-price">
+                        <p>$190.000</p>
+                        <p>COP/mes</p>
                     </div>
                     <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20interesa%20el%20plan%20mensual%20plus" class="btn btn-custom-primary w-100" target="_blank">Agendar</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- CSS para hover -->
-    <style>
-        .plan-card:hover {
-            background-color: #F0E6DC; /* cambio de color suave */
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            cursor: pointer;
-        }
 </section>
 
-            <div class="alert" style="background-color: #FAF8F5; border-left: 4px solid #C9A77B; padding: 20px; border-radius: 8px;">
-                <p style="color: #4E342E; margin: 0;">
-                    <strong style="color: #8B5E3C;">✓ Incluye orientación gratuita antes de comenzar.</strong>
-                </p>
-            </div>
+<!-- CSS -->
+<style>
+.plan-card {
+    background-color: #FAF8F5;
+    border: 2px solid #C9A77B;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
 
-          <div class="text-center mt-5">
+.plan-card.popular {
+    border: 3px solid #8B5E3C;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8B5E3C;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.plan-title {
+    color: #8B5E3C;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.plan-desc {
+    color: #4E342E;
+    margin-bottom: 20px;
+}
+
+.plan-price {
+    background-color: #C9A77B;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.plan-price p:first-child {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.plan-price p:last-child {
+    font-size: 0.9rem;
+    margin: 5px 0 0 0;
+}
+
+/* Hover efecto */
+.plan-card:hover {
+    background-color: #F0E6DC;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+</style>
+ 
+<!-- Alert Section -->
+<div class="alert-info">
+    <p>
+        <strong>✓ Incluye orientación gratuita antes de comenzar.</strong>
+    </p>
+</div>
+
+<div class="text-center mt-5">
     <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20me%20gustaría%20agendar%20mi%20sesión%20o%20pedir%20orientación%20gratuita" 
        class="btn btn-custom-primary btn-lg hero-btn" target="_blank">
         📞 Agenda tu sesión o pide tu orientación gratuita
     </a>
 </div>
 
-<!-- CSS para animación de botón (si ya lo agregaste antes, no hace falta duplicar) -->
+<!-- CSS -->
 <style>
+/* Estilo del alert */
+.alert-info {
+    background-color: #FAF8F5;
+    border-left: 4px solid #C9A77B;
+    padding: 20px;
+    border-radius: 8px;
+    color: #4E342E;
+    margin-bottom: 20px;
+}
+
+.alert-info strong {
+    color: #8B5E3C;
+}
+
+/* Botón animado */
 .hero-btn {
     transition: all 0.3s ease; /* suaviza la animación */
 }
@@ -458,113 +696,282 @@ img:hover {
     color: #fff !important;
     transform: scale(0.98); /* efecto de presión */
 }
+</style>
 
-    <!-- Self-Assessment Section -->
-    <section id="assessment" class="assessment-section py-5" style="background-color: #FAF8F5;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title mb-4" style="color: #8B5E3C;">
-                        ¿No estás seguro si necesitas ayuda psicológica?
-                    </h2>
-                    <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; margin-bottom: 30px;">
-                        Haz nuestro breve test gratuito de bienestar emocional y descubre si es momento de buscar apoyo profesional.
-                    </p>
-                    <p style="color: #8B5E3C; font-size: 0.95rem; font-style: italic; margin-bottom: 30px;">
-                        *(No es diagnóstico, solo una guía inicial.)*
-                    </p>
-                    <a href="#" class="btn btn-custom-primary btn-lg" onclick="startTest(event)">
-                        🧠 Haz el test ahora
-                    </a>
-                </div>
+  <!-- Self-Assessment Section -->
+<section id="assessment" class="assessment-section py-5" style="background-color: #FAF8F5;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-4 section-title-color">
+                    ¿No estás seguro si necesitas ayuda psicológica?
+                </h2>
+                <p class="assessment-text mb-4">
+                    Haz nuestro breve test gratuito de bienestar emocional y descubre si es momento de buscar apoyo profesional.
+                </p>
+                <p class="assessment-note mb-4">
+                    *(No es diagnóstico, solo una guía inicial.)*
+                </p>
+                <a href="#" class="btn btn-custom-primary btn-lg hero-btn" onclick="startTest(event)">
+                    🧠 Haz el test ahora
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- CSS -->
+<style>
+.section-title-color {
+    color: #8B5E3C;
+}
+
+.assessment-text {
+    color: #4E342E;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.assessment-note {
+    color: #8B5E3C;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* Reusar estilos de botones hero-btn */
+.hero-btn {
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #C9A77B !important;
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    transform: scale(0.98);
+}
+</style>
+
+<!-- JS: Función para iniciar test -->
+<script>
+function startTest(event) {
+    event.preventDefault();
+    alert("Función de test iniciada. Aquí puedes redirigir o mostrar el test interactivo.");
+    // Aquí puedes colocar la lógica real del test o redirección
+}
+</script>
+        
 <!-- Testimonials Section -->
 <section id="testimonials" class="testimonials-section py-5" style="background-color: #FFFFFF;">
     <div class="container">
-        <h2 class="section-title mb-5" style="color: #8B5E3C; text-align: center;">
+        <h2 class="section-title section-title-color text-center mb-5">
             Historias que inspiran confianza.
         </h2>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
-                <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B; transition: all 0.3s ease;">
-                    <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; font-style: italic; margin-bottom: 20px;">
+                <div class="testimonial-card">
+                    <p class="testimonial-text mb-3">
                         "Me sentí acompañada desde el primer mensaje. La atención fue inmediata."
                     </p>
-                    <p style="color: #8B5E3C; font-weight: 600;">— Laura G., Cali</p>
+                    <p class="testimonial-author">— Laura G., Cali</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B; transition: all 0.3s ease;">
-                    <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; font-style: italic; margin-bottom: 20px;">
+                <div class="testimonial-card">
+                    <p class="testimonial-text mb-3">
                         "La terapia online me ayudó a retomar el control de mi ansiedad."
                     </p>
-                    <p style="color: #8B5E3C; font-weight: 600;">— Carlos R., 28 años</p>
+                    <p class="testimonial-author">— Carlos R., 28 años</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="testimonial-card" style="background-color: #FAF8F5; padding: 30px; border-radius: 12px; border-left: 4px solid #C9A77B; transition: all 0.3s ease;">
-                    <p style="color: #4E342E; font-size: 1.05rem; line-height: 1.8; font-style: italic; margin-bottom: 20px;">
+                <div class="testimonial-card">
+                    <p class="testimonial-text mb-3">
                         "Nos ayudó a comunicarnos como pareja y volver a disfrutar nuestra relación."
                     </p>
-                    <p style="color: #8B5E3C; font-weight: 600;">— Ana M., 32 años</p>
+                    <p class="testimonial-author">— Ana M., 32 años</p>
                 </div>
             </div>
         </div>
 
         <div class="text-center mt-5">
             <a href="https://wa.me/573150835253?text=Hola%20BullyGuard%2C%20quiero%20comenzar%20mi%20historia%20de%20cambio" 
-               class="btn btn-custom-primary btn-lg">
+               class="btn btn-custom-primary hero-btn btn-lg">
                 🌈 Comienza tu historia de cambio hoy
             </a>
         </div>
     </div>
 </section>
 
-<section id="psychologists">
-    <h2>Conoce a Nuestros Psicólogos</h2>
-    <div class="profiles">
-        <!-- Psicólogo 1 -->
-        <div class="profile-card">
-            <img src="angelica.jpg" alt="Angelica Mellizo Vasquez">
-            <h3>Angelica Mellizo Vasquez</h3>
-            <button onclick="showInfo('info1')">Ver información</button>
-            <div class="info-box" id="info1">
-                <h3>Angelica Mellizo Vasquez</h3>
-                <p>Especialización: Psicología infantil y familiar</p>
-                <p>Experiencia: 5 años ayudando a niños y adolescentes</p>
-                <button onclick="closeInfo('info1')">Cerrar</button>
+<!-- CSS -->
+<style>
+.section-title-color {
+    color: #8B5E3C;
+}
+
+.testimonial-card {
+    background-color: #FAF8F5;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #C9A77B;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.testimonial-text {
+    color: #4E342E;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.testimonial-author {
+    color: #8B5E3C;
+    font-weight: 600;
+}
+
+/* Botón animado */
+.hero-btn {
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #C9A77B !important;
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    transform: scale(0.98);
+}
+</style>
+
+  
+<!-- Psychologists Section -->
+<section id="psychologists" class="psychologists-section py-5" style="background-color: #FAF8F5;">
+    <div class="container">
+        <h2 class="section-title section-title-color text-center mb-5">
+            Conoce a Nuestros Psicólogos
+        </h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Psicólogo 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="profile-card text-center">
+                    <img src="angelica.jpg" alt="Angelica Mellizo Vasquez" class="img-fluid rounded-4 mb-3">
+                    <h3>Angelica Mellizo Vasquez</h3>
+                    <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info1')">Ver información</button>
+                    <div class="info-box" id="info1">
+                        <h4>Angelica Mellizo Vasquez</h4>
+                        <p>Especialización: Psicología infantil y familiar</p>
+                        <p>Experiencia: 5 años ayudando a niños y adolescentes</p>
+                        <button class="btn btn-secondary btn-sm" onclick="closeInfo('info1')">Cerrar</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Psicólogo 2 -->
-        <div class="profile-card">
-            <img src="manuel.jpg" alt="Manuel Guerrero">
-            <h3>Manuel Guerrero</h3>
-            <button onclick="showInfo('info2')">Ver información</button>
-            <div class="info-box" id="info2">
-                <h3>Manuel Guerrero</h3>
-                <p>Especialización: Psicología clínica y terapia de adultos</p>
-                <p>Experiencia: 8 años en manejo de ansiedad y depresión</p>
-                <button onclick="closeInfo('info2')">Cerrar</button>
+
+            <!-- Psicólogo 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="profile-card text-center">
+                    <img src="manuel.jpg" alt="Manuel Guerrero" class="img-fluid rounded-4 mb-3">
+                    <h3>Manuel Guerrero</h3>
+                    <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info2')">Ver información</button>
+                    <div class="info-box" id="info2">
+                        <h4>Manuel Guerrero</h4>
+                        <p>Especialización: Psicología clínica y terapia de adultos</p>
+                        <p>Experiencia: 8 años en manejo de ansiedad y depresión</p>
+                        <button class="btn btn-secondary btn-sm" onclick="closeInfo('info2')">Cerrar</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Psicólogo 3 -->
-        <div class="profile-card">
-            <img src="marisol.jpg" alt="Marisol Benites">
-            <h3>Marisol Benites</h3>
-            <button onclick="showInfo('info3')">Ver información</button>
-            <div class="info-box" id="info3">
-                <h3>Marisol Benites</h3>
-                <p>Especialización: Psicología educativa y coaching personal</p>
-                <p>Experiencia: 6 años apoyando a jóvenes y adultos</p>
-                <button onclick="closeInfo('info3')">Cerrar</button>
+
+            <!-- Psicólogo 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="profile-card text-center">
+                    <img src="marisol.jpg" alt="Marisol Benites" class="img-fluid rounded-4 mb-3">
+                    <h3>Marisol Benites</h3>
+                    <button class="btn btn-custom-primary hero-btn mb-3" onclick="showInfo('info3')">Ver información</button>
+                    <div class="info-box" id="info3">
+                        <h4>Marisol Benites</h4>
+                        <p>Especialización: Psicología educativa y coaching personal</p>
+                        <p>Experiencia: 6 años apoyando a jóvenes y adultos</p>
+                        <button class="btn btn-secondary btn-sm" onclick="closeInfo('info3')">Cerrar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>  
+</section>
+
+<!-- CSS -->
+<style>
+.section-title-color {
+    color: #8B5E3C;
+}
+
+.profile-card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(139,94,60,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.info-box {
+    display: none;
+    background-color: #FAF8F5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: left;
+    color: #4E342E;
+}
+
+.info-box h4 {
+    color: #8B5E3C;
+    margin-bottom: 10px;
+}
+
+.hero-btn {
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #C9A77B !important;
+    color: #fff !important;
+}
+
+.hero-btn:active {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+    transform: scale(0.98);
+}
+</style>
+
+<!-- JS -->
+<script>
+function showInfo(id) {
+    document.getElementById(id).style.display = 'block';
+}
+
+function closeInfo(id) {
+    document.getElementById(id).style.display = 'none';
+}
+</script>
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section py-5" style="background-color: #FAF8F5;">
@@ -606,112 +1013,121 @@ img:hover {
     background-color: #8B5E3C; /* color al hacer clic */
     transform: scale(0.98);
 }
+</style>
 
- 
+<!-- Footer -->
+<footer style="background-color: #8B5E3C; color: white; padding: 40px 0; text-align: center;">
+    <div class="container">
+        <p style="margin-bottom: 10px;">
+            <strong>Trascender Psicología Online</strong> — Atención en toda Cali
+        </p>
+        <p style="margin-bottom: 10px;">
+            Psicólogos certificados | Confidencialidad garantizada | Políticas transparentes
+        </p>
+        <p style="font-size: 0.9rem; opacity: 0.9;">
+            © 2025 BullyGuard. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
 
-    <!-- Footer -->
-    <footer style="background-color: #8B5E3C; color: white; padding: 40px 0; text-align: center;">
-        <div class="container">
-            <p style="margin-bottom: 10px;">
-                <strong>Trascender Psicología Online</strong> — Atención en toda Cali
-            </p>
-            <p style="margin-bottom: 10px;">
-                Psicólogos certificados | Confidencialidad garantizada | Políticas transparentes
-            </p>
-            <p style="font-size: 0.9rem; opacity: 0.9;">
-                © 2025 BullyGuard. Todos los derechos reservados.
-            </p>
-        </div>
-    </footer>
-
-    <!-- Test Modal -->
-    <div class="modal fade" id="testModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content" style="border: none; border-radius: 12px;">
-                <div class="modal-header" style="background-color: #8B5E3C; color: white; border: none;">
-                    <h5 class="modal-title">Test de Bienestar Emocional</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body" style="padding: 30px;">
-                    <form id="testForm">
-                        <div class="mb-4">
-                            <p style="color: #4E342E; font-weight: 600; margin-bottom: 15px;">1. ¿Cómo te has sentido emocionalmente en las últimas dos semanas?</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q1" id="q1a" value="1">
-                                <label class="form-check-label" for="q1a" style="color: #4E342E;">Muy bien, sin preocupaciones</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q1" id="q1b" value="2">
-                                <label class="form-check-label" for="q1b" style="color: #4E342E;">Bien, con algunos momentos difíciles</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q1" id="q1c" value="3">
-                                <label class="form-check-label" for="q1c" style="color: #4E342E;">Regular, con altibajos</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q1" id="q1d" value="4">
-                                <label class="form-check-label" for="q1d" style="color: #4E342E;">Mal, con mucha ansiedad o tristeza</label>
-                            </div>
+<!-- Test Modal -->
+<div class="modal fade" id="testModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="border: none; border-radius: 12px;">
+            <div class="modal-header" style="background-color: #8B5E3C; color: white; border: none;">
+                <h5 class="modal-title">Test de Bienestar Emocional</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="padding: 30px;">
+                <form id="testForm">
+                    <!-- Pregunta 1 -->
+                    <div class="mb-4">
+                        <p style="color: #4E342E; font-weight: 600; margin-bottom: 15px;">
+                            1. ¿Cómo te has sentido emocionalmente en las últimas dos semanas?
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1a" value="1">
+                            <label class="form-check-label" for="q1a" style="color: #4E342E;">Muy bien, sin preocupaciones</label>
                         </div>
-
-                        <div class="mb-4">
-                            <p style="color: #4E342E; font-weight: 600; margin-bottom: 15px;">2. ¿Experimentas dificultades para dormir o concentrarte?</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q2" id="q2a" value="1">
-                                <label class="form-check-label" for="q2a" style="color: #4E342E;">No, duermo bien y me concentro sin problemas</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q2" id="q2b" value="2">
-                                <label class="form-check-label" for="q2b" style="color: #4E342E;">A veces tengo dificultades</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q2" id="q2c" value="3">
-                                <label class="form-check-label" for="q2c" style="color: #4E342E;">Frecuentemente tengo problemas</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q2" id="q2d" value="4">
-                                <label class="form-check-label" for="q2d" style="color: #4E342E;">Constantemente tengo insomnio o falta de concentración</label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1b" value="2">
+                            <label class="form-check-label" for="q1b" style="color: #4E342E;">Bien, con algunos momentos difíciles</label>
                         </div>
-
-                        <div class="mb-4">
-                            <p style="color: #4E342E; font-weight: 600; margin-bottom: 15px;">3. ¿Tienes apoyo emocional de amigos o familia?</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q3" id="q3a" value="1">
-                                <label class="form-check-label" for="q3a" style="color: #4E342E;">Sí, tengo un buen apoyo</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q3" id="q3b" value="2">
-                                <label class="form-check-label" for="q3b" style="color: #4E342E;">Parcialmente, pero me gustaría más</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q3" id="q3c" value="3">
-                                <label class="form-check-label" for="q3c" style="color: #4E342E;">Poco, me siento bastante solo</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="q3" id="q3d" value="4">
-                                <label class="form-check-label" for="q3d" style="color: #4E342E;">No tengo apoyo, me siento muy solo</label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1c" value="3">
+                            <label class="form-check-label" for="q1c" style="color: #4E342E;">Regular, con altibajos</label>
                         </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1d" value="4">
+                            <label class="form-check-label" for="q1d" style="color: #4E342E;">Mal, con mucha ansiedad o tristeza</label>
+                        </div>
+                    </div>
 
-                        <button type="button" class="btn btn-custom-primary w-100" onclick="submitTest()">
-                            Enviar respuestas
-                        </button>
-                    </form>
-                </div>
+                    <!-- Pregunta 2 -->
+                    <div class="mb-4">
+                        <p style="color: #4E342E; font-weight: 600; margin-bottom: 15px;">
+                            2. ¿Experimentas dificultades para dormir o concentrarte?
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2a" value="1">
+                            <label class="form-check-label" for="q2a" style="color: #4E342E;">No, duermo bien y me concentro sin problemas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2b" value="2">
+                            <label class="form-check-label" for="q2b" style="color: #4E342E;">A veces tengo dificultades</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2c" value="3">
+                            <label class="form-check-label" for="q2c" style="color: #4E342E;">Frecuentemente tengo problemas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2d" value="4">
+                            <label class="form-check-label" for="q2d" style="color: #4E342E;">Constantemente tengo insomnio o falta de concentración</label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="mb-4">
+                        <p style="color: #4E342E; font-weight: 600; margin-bottom: 15px;">
+                            3. ¿Tienes apoyo emocional de amigos o familia?
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3a" value="1">
+                            <label class="form-check-label" for="q3a" style="color: #4E342E;">Sí, tengo un buen apoyo</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3b" value="2">
+                            <label class="form-check-label" for="q3b" style="color: #4E342E;">Parcialmente, pero me gustaría más</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3c" value="3">
+                            <label class="form-check-label" for="q3c" style="color: #4E342E;">Poco, me siento bastante solo</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3d" value="4">
+                            <label class="form-check-label" for="q3d" style="color: #4E342E;">No tengo apoyo, me siento muy solo</label>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-custom-primary w-100" onclick="submitTest()">
+                        Enviar respuestas
+                    </button>
+                </form>
             </div>
         </div>
     </div>
-    <!-- Botón Flotante de Emergencia -->
+</div>
+
+<!-- Botón Flotante de Emergencia -->
 <a href="https://wa.me/573001234567?text=Emergencia" target="_blank" class="boton-emergencia">⚠️ Emergencia</a>
 
 <style>
-  /* Estilos para el botón flotante */
-  .boton-emergencia {
+/* Estilos para el botón flotante */
+.boton-emergencia {
     position: fixed;
-    bottom: 40px; /* distancia desde el borde inferior */
-    right: 20px;  /* distancia desde el borde derecho */
-    background-color: #E53935; /* color inicial rojo suave */
+    bottom: 40px;
+    right: 20px;
+    background-color: #E53935;
     color: white;
     font-weight: bold;
     padding: 10px 15px;
@@ -721,21 +1137,18 @@ img:hover {
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     z-index: 9999;
     font-size: 14px;
-  }
+}
 
-  /* Animación al pasar el mouse */
-  .boton-emergencia:hover {
+.boton-emergencia:hover {
     transform: scale(1.1);
-    background-color: #D32F2F; /* rojo un poco más intenso */
+    background-color: #D32F2F;
     box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-  }
+}
+</style>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="script.js"></script>
-</body>
-</html>
 
